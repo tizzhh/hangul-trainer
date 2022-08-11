@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    High score
+{% endblock %}
+
+{% block main %}
+<table class="table table-success table-striped" style="font-size: larger">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>High score</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for high_score in high_score %}
+            <tr>
+                <td>{{ high_score["username"] }}</td>
+                <td>{{ high_score["high_score"] }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

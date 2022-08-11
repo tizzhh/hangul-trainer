@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Info
+{% endblock %}
+
+{% block main %}
+<h4>How to learn Korean Alphabet fast?</h4>
+<div class="container">
+    <p>The challenge before us is the task of memorizing 40 symbols of the Korean alphabet, their writing, and pronunciation.
+    At first glance, this seems rather complicated, but if you follow a professional methodology, everything is learned very quickly and easily.</p>
+    <p class="pic">The groups division of The Korean alphabet into small groups
+        for the convenience step-by-step memorization:</p>
+    <img src="static/pic1.svg" style="width: 700px" alt="korean alphabet">
+    <p>We will divide 40 letters of the Korean alphabet into small groups of 4-6 characters. Such blocks are easy to memorize.</p>
+    <p>We need to learn 24 letters, all the other symbols of the Korean alphabet are derivative forms of 11 diphthongs
+        (combined vowels) and 5 doubled consonants, which in fact represent just a doubled symbol of a certain consonant with a doubled sound, for example:</p>
+    <img src="static/pic2.svg" style="width: 700px" alt="korean alphabet">
+    <h4>The Korean Alphabet Composition</h4>
+    <img src="static/pic3.svg" style="width: 700px" alt="korean alphabet">
+    <p>In the Korean language there are 24 letters (14 consonants, 10 vowels), 11 diphthongs (complex vowels), and 5 double consonants:</p>
+    <ul style="list-style: none">
+        <li>10 simple vowels: <span style="color: green">ㅏㅓㅑㅕㅣㅡ ㅗ ㅜ ㅛ ㅠ</span></li>
+        <li>14 simple consonants: <span style="color: blue">ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎ</span></li>
+        <li>11 diphthongs: <span style="color: green">ㅐㅒㅔㅖㅘ ㅙ ㅚ ㅝ ㅞ ㅟ ㅢ</span></li>
+        <li>5 doubled consonants: <span style="color: blue">ㄲㄸㅃㅆㅉ</span></li>
+    </ul>
+    <h4>Vowels of the Korean alphabet</h4>
+    <p>The Korean Alphabet has 10 simple vowels and 11 diphthongs. For the convenience of memorizing, they can be divided into 6 groups as follows:</p>
+    <img src="static/pic4.svg" style="width: 700px" alt="korean alphabet">
+    <h4>Consonants of the Korean alphabet</h4>
+    <p>The Korean alphabet has 14 simple consonants and 5 doubled letters. For the convenience of learning, they are divided into 5 groups:</p>
+    <img src="static/pic5.svg" style="width: 700px" alt="korean alphabet">
+    <h5>Hangul stroke order:</h5>
+    <p>Korean Alphabet has a certain way of writing each letter:</p>
+</div>
+<img src="static/stroke1.jpg" style="width: 700px" alt="korean stroke order">
+<img src="static/stroke2.jpg" style="width: 700px" alt="korean stroke order">
+<form action="/train", method="post">
+    <button class="btn btn-success btn-lg" type="submit">Practise!</button>
+</form>
+
+<footer class="mb-5 medium text-center">
+   Sources: <a href="https://www.lingodeer.com/learn-languages/kr/en/learn-korean-online/alphabet" target="_blank">Audio</a>,
+   <a href="https://textarchive.ru/c-1984250-pall.html" target="_blank">Stroke order pictures</a>,
+   <a href="https://hangul.fun" target="_blank">Text</a>
+</footer>
+{% endblock %}

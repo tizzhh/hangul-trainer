@@ -1,0 +1,263 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Training
+{% endblock %}
+
+{% block main %}
+<section id="sec1">
+    <h3>Choose rows to practise</h3>
+    <h6>Click on a letter to play its pronunciation!</h6>
+    <table style="background-color: rgba(192, 192, 192, 0.2)" class="table table-hover">
+        <tbody>
+            <tr>
+                <td><input type="checkbox" id="row1" value="ㅏㅑㅓㅕ"></td>
+                <td><div id="a" class="main">ㅏ</div><div>a</div></td>
+                <td><div id="ya" class="main">ㅑ</div><div>ya</div></td>
+                <td><div id="eo" class="main">ㅓ</div><div>o</div></td>
+                <td><div id="yeo" class="main">ㅕ</div><div>yo</div></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="row2" value="ㅗㅛㅜㅠ"></td>
+                <td><div id="o" class="main">ㅗ</div><div>o</div></td>
+                <td><div id="yo" class="main">ㅛ</div><div>yo</div></td>
+                <td><div id="u" class="main">ㅜ</div><div>u</div></td>
+                <td><div id="yu" class="main">ㅠ</div><div>yu</div></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="row3" value="ㅡㅣ"></td>
+                <td></td>
+                <td><div id="eu" class="main">ㅡ</div><div>eu</div></td>
+                <td><div id="i" class="main">ㅣ</div><div>i</div></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="row4" value="ㅐㅒㅔㅖ"></td>
+                <td><div id="ae" class="main">ㅐ</div><div>e</div></td>
+                <td><div id="yae" class="main">ㅒ</div><div>ye</div></td>
+                <td><div id="e" class="main">ㅔ</div><div>e</div></td>
+                <td><div id="ye" class="main">ㅖ</div><div>ye</div></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="row5" value="ㅘㅙㅚ"></td>
+                <td><div id="wa" class="main">ㅘ</div><div>wa</div></td>
+                <td><div id="wae" class="main">ㅙ</div><div>we</div></td>
+                <td><div id="oe" class="main">ㅚ</div><div>we</div></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="row6" value="ㅝㅞㅟㅢ"></td>
+                <td><div id="wo" class="main">ㅝ</div><div>wo</div></td>
+                <td><div id="we" class="main">ㅞ</div><div>we</div></td>
+                <td><div id="wi" class="main">ㅟ</div><div>wi</div></td>
+                <td><div id="ui" class="main">ㅢ</div><div>ui</div></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="row7" value="ㄱㄴㄷㄹ"></td>
+                <td><div id="g" class="main">ㄱ</div><div>k</div></td>
+                <td><div id="n" class="main">ㄴ</div><div>n</div></td>
+                <td><div id="d" class="main">ㄷ</div><div>t</div></td>
+                <td><div id="l" class="main">ㄹ</div><div>r</div></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="row8" value="ㅁㅂㅅㅇ"></td>
+                <td><div id="m" class="main">ㅁ</div><div>m</div></td>
+                <td><div id="b" class="main">ㅂ</div><div>p</div></td>
+                <td><div id="s" class="main">ㅅ</div><div>s</div></td>
+                <td><div class="main">ㅇ</div><div>ng</div></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="row9" value="ㅈㅊ"></td>
+                <td></td>
+                <td><div id="j" class="main">ㅈ</div><div>j</div></td>
+                <td><div id="ch" class="main">ㅊ</div><div>ch</div></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="row10" value="ㅋㅌㅍㅎ"></td>
+                <td><div id="k" class="main">ㅋ</div><div>kh</div></td>
+                <td><div id="t" class="main">ㅌ</div><div>th</div></td>
+                <td><div id="p" class="main">ㅍ</div><div>ph</div></td>
+                <td><div id="h" class="main">ㅎ</div><div>h</div></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="row11" value="ㄲㄸㅃㅆㅉ"></td>
+                <td><div id="kk" class="main">ㄲ</div><div>kk</div></td>
+                <td><div id="tt" class="main">ㄸ</div><div>tt</div></td>
+                <td><div id="pp" class="main">ㅃ</div><div>pp</div></td>
+                <td><div id="ss" class="main">ㅆ</div><div>ss</div></td>
+                <td><div id="jj" id="test" class="main">ㅉ</div><div>jj</div></td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <button id="train" class="btn btn-success" type="submit">Train!</button>
+        <button id="check_all" class="btn btn-success">Check all</button>
+        <button id="uncheck_all" class="btn btn-success">Uncheck all</button>
+    </div>
+</section>
+<section id ="sec2" style = "display: none">
+    <div>
+        <div id="koreanlet" class="main">A</div>
+        <div id="englet" style = "display: none">a</div>
+    </div>
+    <input id="answer" onblur="this.focus()" type="text" autocomplete="off" placeholder="Pronunciation" autofocus>
+    <button class="btn btn-success" id="back">Back to select menu</button>
+    <p>To see a hint click on a letter!</p>
+    <form action="/record_score", method="post">
+        <input name="highscore" id="highscore" type="hidden">
+        <p id="score"></p>
+        <button class="btn btn-success" id="recordscore" style="display: none">Submit score!</button>
+    </form>
+</section>
+<script>
+    let button1 = document.querySelector("#train");
+    button1.addEventListener('click', function()
+    {
+        var str1 = "";
+        var letters = {
+            "ㅏ": "a",
+            "ㅑ": "ya",
+            "ㅓ": "o",
+            "ㅕ": "yo",
+            "ㅗ": "o",
+            "ㅛ": "yo",
+            "ㅜ":"u",
+            "ㅠ":"yu",
+            "ㅡ":"eu",
+            "ㅣ":"i",
+            "ㅐ":"e",
+            "ㅒ":"ye",
+            "ㅔ":"e",
+            "ㅖ":"ye",
+            "ㅘ":"wa",
+            "ㅙ":"we",
+            "ㅚ":"we",
+            "ㅝ":"wo",
+            "ㅞ":"we",
+            "ㅟ":"wi",
+            "ㅢ":"ui",
+            "ㄱ":"k",
+            "ㄴ":"n",
+            "ㄷ":"t",
+            "ㄹ":"r",
+            "ㅁ":"m",
+            "ㅂ":"p",
+            "ㅅ":"s",
+            "ㅇ":"ng",
+            "ㅈ":"j",
+            "ㅊ":"ch",
+            "ㅋ":"kh",
+            "ㅌ":"th",
+            "ㅍ":"ph",
+            "ㅎ":"h",
+            "ㄲ":"kk",
+            "ㄸ":"tt",
+            "ㅃ":"pp",
+            "ㅆ":"ss",
+            "ㅉ":"jj"
+        }
+
+        document.querySelector("#sec1").style = "display: none";
+        document.querySelector("#sec2").style = "display";
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        for (var checkbox of checkboxes) {
+            if (checkbox.checked == true)
+            {
+                str1 += checkbox.value;
+            }
+        }
+
+        if (str1.length == 0)
+        {
+            alert("Please select a row");
+            document.querySelector("#sec2").style = "display: none";
+            document.querySelector("#sec1").style = "display";
+            location.reload();
+        }
+
+        var randElement = str1[Math.floor(Math.random() * str1.length)];
+        document.querySelector("#koreanlet").innerHTML = randElement;
+        document.querySelector("#englet").innerHTML = letters[document.querySelector("#koreanlet").innerHTML];
+
+        var score = 0;
+
+        let answer = document.getElementById("answer");
+        answer.addEventListener('input', function()
+        {
+            if (letters[document.querySelector("#koreanlet").innerHTML] == document.getElementById("answer").value)
+            {
+                document.querySelector("#englet").style = "display: none";
+                score += 1;
+                document.getElementById("score").innerHTML = "Score: " + score;
+                document.getElementById("recordscore").style = "display";
+                document.getElementById("highscore").value = score;
+                randElement = str1[Math.floor(Math.random() * str1.length)];
+                document.querySelector("#koreanlet").innerHTML = randElement;
+                document.querySelector("#englet").innerHTML = letters[document.querySelector("#koreanlet").innerHTML];
+                document.getElementById("answer").value = '';
+            }
+        })
+
+        document.querySelector("#koreanlet").addEventListener('click', function()
+        {
+            document.querySelector("#englet").style = "display";
+        })
+
+    });
+
+    let button2 = document.querySelector("#back");
+    button2.addEventListener('click', function()
+    {
+        document.querySelector("#sec2").style = "display: none";
+        document.querySelector("#sec1").style = "display";
+        location.reload();
+    });
+</script>
+
+<script>
+    let buttons = document.querySelectorAll('.btn');
+    buttons.forEach(function (button) {
+        button.addEventListener('click', function()
+        {
+            if (button.id == "check_all")
+            {
+                var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                for (var checkbox of checkboxes) {
+                    checkbox.checked = true;
+                    }
+            }
+            else if (button.id == "uncheck_all")
+            {
+                var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                for (var checkbox of checkboxes) {
+                    checkbox.checked = false;
+                    }
+            }
+        })
+    });
+</script>
+
+<script>
+    let krletters = document.querySelectorAll('.main')
+    krletters.forEach(function (krletter)
+    {
+        krletter.addEventListener('click', function()
+        {
+            var audio = new Audio('static/audio/kr-m-zy-' + krletter.id + '.mp3');
+            audio.volume = 0.2;
+            audio.play();
+        })
+    });
+</script>
+{% endblock %}
